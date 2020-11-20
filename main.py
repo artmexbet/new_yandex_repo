@@ -6,7 +6,7 @@ from PyQt5 import uic
 from random import randint
 
 
-class Example(QMainWindow):
+class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("UI.ui", self)
@@ -35,6 +35,6 @@ class Example(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = Example()
+    ex = Window()
     ex.show()
     sys.exit(app.exec())
